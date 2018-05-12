@@ -1,0 +1,31 @@
+/**
+ * Google Fonts Demo
+ **/
+
+/* Add in the Google Fonts of your choice */
+.thought1{
+    font-family: 'Pangolin', cursive;
+}
+
+.thought2{
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.thought3{
+    font-family: 'Skranji', cursive;
+}
+
+#link {
+    color:blue;
+    font-size: 50px;
+}
+
+#link:hover {
+    background-color: black;
+    color: yellow;
+}
+
+#link:active {
+    background-color: teal;
+    color: purple;
+}

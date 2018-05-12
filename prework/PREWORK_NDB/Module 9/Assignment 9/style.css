@@ -1,0 +1,48 @@
+.center {
+    text-align: center
+}
+
+#textred {
+    color:red
+}
+
+#textblue {
+    color:blue
+}
+
+#textgreen {
+    color:green
+}
+
+#textbig {
+    font-size: 40px
+}
+
+#texttiny {
+    font-size: 10px
+}
+
+#textbold {
+    font-weight: bold
+}
+
+#font {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#multiple {
+    color: orange;
+    font-weight: bold
+}
+
+.styledFont {
+    color: blueviolet;
+    font-weight: bold;
+    font-style: italic
+}
+
+img {
+    border-style: double;
+    border-color: orangered;
+    border-width: thick
+}
