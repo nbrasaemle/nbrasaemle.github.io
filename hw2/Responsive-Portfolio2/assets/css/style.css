@@ -1,0 +1,186 @@
+
+
+/* Header Settings */
+
+.h {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+/* Main Logo */
+h1 {
+    background: #4aaaa5;
+    color: #ffffff;
+    width: 29%;
+    padding: 25px;
+    margin-top: 0px;
+    z-index: 2;
+    font-size: 30px; 
+}
+
+h2 {
+    color: #4aaaa5;
+    font-size: 24px;
+}
+/* End of Header Settings*/
+
+/* Navigation Settings */
+/* Top white bar */
+.topnav {
+    background: #ffffff;
+    width: 100%;
+    border-bottom: inset #cccccc;
+    z-index: -1;
+    margin-bottom: 20px;   
+}
+
+/* About/Portfolio/Contact settings */
+.navbar {
+    text-align: center;
+    float: right;
+    margin-top: -70px;
+    margin-bottom: 20px;
+    padding: 25px;
+    background-color: #ffffff;    
+}
+
+/* Content Width */
+.navcontent {
+    width:960px;
+    margin: auto;
+}
+
+.navbuttons {
+    text-decoration: none;
+    color: #666666;
+    padding: 10px;
+}
+
+.navbuttons:hover {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 30px 10px;
+}
+
+.navbuttons:active {
+    color: #ffffff;
+    background-color: #4fd8d1;
+}
+/* End of Navigation Settings */
+
+/* Body Settings */
+body{
+    background-image: url("../images/knitting250px_@2X.png");
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+}
+
+section {
+    clear: both;
+    overflow: auto;
+    width: 920px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 40px;
+    margin: auto;  
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-color: #cccccc;
+}
+
+.buttons {
+    background-color: #4aaaa5;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    background-color: #4fd8d1;
+}
+/* End of Body Settings */
+
+/* About Nicole Settings */
+#content {
+    display: inline-block;
+    line-height: 1.5;
+    overflow: auto;
+    display: inline;
+}
+
+#img1 {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-right:20px;
+}
+/* End of About Nicole Settings */
+
+/* Contact Settings */
+.area1 {
+    width: 825px;
+}
+
+#submit {
+    padding: 12px 30px;
+    font-size: 14px;
+    margin: 4px 2px;
+}
+/* End of Contact Settings */
+
+/* Portfolio Settings */
+.images {
+    z-index: -200;
+    margin: 10px 20px 10px 0px; 
+}
+
+/* Making the buttons lay over the images */
+.imagebutton {
+    z-index: 200;
+    width: 260px;
+    height: 40px;
+    font-size: 16px;
+    position: absolute; 
+    bottom: 20px;
+    right: 20px;  
+}
+
+.imagecontent {
+    display: inline-block;
+    position: relative;
+}
+
+/* Makining the images go into columns */
+.col1, .col2 {
+    display:flex;
+    flex-wrap: wrap;
+}
+/* End of Portfolio Settings */
+
+/* Footer Settings */
+footer {
+    height: 30px;
+    background-color: #666666;
+    width: 100%;
+    border-top: #4aaaa5 solid 5px;
+    font-size: 10px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+    bottom: 0;
+    margin-top: 20px;
+}
+
+.ftr {
+    position: absolute;
+}
+/* End of Footer Settings */
