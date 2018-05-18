@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .windowSizeHeader{
+      background-color: black;
+      color:white;
+      width:100%;
+      padding:10px;
+    }
+
+    /* @media queries 
+    /*
+     .col-sm-6 {
+          min-height: 200px;
+      }
+
+    @media (max-width: 768px){
+      .col-sm-6 {
+          min-height: 120px;
+      }
+    }
+
+    }
+    */
+  </style>
+</head>
+<!-- onresize is an event that occurs when the window is resized, 
+  onload is event that occurs when the page is loaded;
+ both operations trigger the windowSizeCheck function -->
+<body onresize="windowSizeCheck();" onload="windowSizeCheck();">
+<div class="container">
+  <h1>Bootstrap Grid Sizes</h1>
+  <div class="row">
+    <div class="col-md-12 windowSizeHeader">
+      Window Width: <span id="windowSize"></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6" style="background-color:#ffb9b9">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+    <div class="col-sm-6" style="background-color:#d3d3ff;">
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    </div>
+  </div>
+  
+</div>
+
+<script type="text/javascript">
+// Function that writes the window size to the ID "windowSize"
+function windowSizeCheck(){
+  var windowSize = window.innerWidth;
+  document.getElementById("windowSize").textContent = windowSize + "px";
+}
+</script>
+</body>
+</html>
