@@ -11,15 +11,14 @@ h1 {
     background: #4aaaa5;
     color: #ffffff;
     width: 29%;
-    padding: 25px;
-    margin-top: 0px;
-    z-index: 2;
-    font-size: 30px; 
+    padding: 1em;
+    margin-top: -0em;
+    font-size: 2em; 
 }
 
 h2 {
     color: #4aaaa5;
-    font-size: 24px;
+    font-size: 2em;
 }
 /* End of Header Settings*/
 
@@ -29,36 +28,35 @@ h2 {
     background: #ffffff;
     width: 100%;
     border-bottom: inset #cccccc;
-    z-index: -1;
-    margin-bottom: 20px;   
+    margin-bottom: 1em;   
 }
 
 /* About/Portfolio/Contact settings */
 .navbar {
     text-align: center;
     float: right;
-    margin-top: -70px;
-    margin-bottom: 20px;
-    padding: 25px;
-    background-color: #ffffff;    
+    margin-top: -6.5em;
+    margin-bottom: 2em;
+    padding: 3em;
+        
 }
 
 /* Content Width */
 .navcontent {
-    width:960px;
+    width:90%;
     margin: auto;
 }
 
 .navbuttons {
     text-decoration: none;
     color: #666666;
-    padding: 10px;
+    padding: 1em;
 }
 
 .navbuttons:hover {
     background-color: #4aaaa5;
     color: #ffffff;
-    padding: 30px 10px;
+    padding: 2em 1em;
 }
 
 .navbuttons:active {
@@ -78,10 +76,10 @@ body{
 section {
     clear: both;
     overflow: auto;
-    width: 920px;
+    width: 90%;
     background-color: #ffffff;
-    padding: 20px;
-    margin-bottom: 40px;
+    padding: 1em;
+    margin-bottom: 1em;
     margin: auto;  
 }
 
@@ -110,26 +108,36 @@ hr {
 /* End of Body Settings */
 
 /* About Nicole Settings */
-#content {
+/*#content {
     display: inline-block;
     line-height: 1.5;
     overflow: auto;
     display: inline;
-}
+   
+}*/
 
 #img1 {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     float: left;
-    margin-right:20px;
+    margin-right:1em;
 }
 /* End of About Nicole Settings */
 
 /* Contact Settings */
 .area1 {
-    width: 825px;
+    width: 90%;
 }
-
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 1em 1em;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;    
+    font-size: 16px;
+    resize: none;
+}
 #submit {
     padding: 12px 30px;
     font-size: 14px;
@@ -140,7 +148,7 @@ hr {
 /* Portfolio Settings */
 .images {
     z-index: -200;
-    margin: 10px 20px 10px 0px; 
+    margin: 1em 2em 1em 0em; 
 }
 
 /* Making the buttons lay over the images */
@@ -150,8 +158,8 @@ hr {
     height: 40px;
     font-size: 16px;
     position: absolute; 
-    bottom: 20px;
-    right: 20px;  
+    bottom: 2em;
+    right: 2em;  
 }
 
 .imagecontent {
@@ -184,3 +192,22 @@ footer {
     position: absolute;
 }
 /* End of Footer Settings */
+
+/* Responsive CSS */
+@media screen and (max-width: 980px) {
+
+ 
+}
+@media screen and (max-width: 768px) {
+
+   
+}
+
+@media screen and (max-width: 640px) {
+
+    .topnav{
+        position: static;
+    }
+
+   
+}
