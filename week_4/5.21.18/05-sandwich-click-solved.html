@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Trigger Clicked</title>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <h1>Click to Eat Sandwich</h1>
+  <h1>Open that fly Console Log for Harry Potter stuff</h1>
+  <h3 id="pbj">Peanut Butter Jelly</h3>
+  <h3 id="grilledcheese">Grilled Cheese</h3>
+  <h3 id="tofu">Tofu</h3>
+
+  <script type="text/javascript">
+
+    // This document.ready isn't necessary in this example... but is needed in cases where the HTML is complex.
+    // This code makes sure that the JavaScript doesn't get run until the HTML is finished loading
+    // It's useful to become familiar with now.
+    $(document).ready(function() {
+      
+      //function to be called to increment sandwiches eaten
+      function sandwichClick(sandNum, sandType) {
+        sandNum ++;
+
+        //We value proper English in this class.
+        if (sandNum > 1) {
+          console.log("You've eaten " + sandNum + " " + sandType + " sandwiches.");
+        } else {
+          console.log("You've eaten " + sandNum + " " + sandType + " sandwich.");
+        }
+        
+        return sandNum;
+      }
+
+      // Tracks total number of each sandwich type eaten
+      var pbjeat = 0, chzeat = 0, tofueat = 0;
+      
+      /*Upon clicking PBJ, sandwichClick function is called
+      with variable pbjeat as parameter1 and string PBJ as
+      parameter2. Increments pbjeat as sandNum and returns
+      the new value to global pbjeat variable*/
+      $("#pbj").on("click", function(){
+        pbjeat = sandwichClick(pbjeat, "PBJ")
+      })
+
+      //same as above but for grilled cheese
+      $("#grilledcheese").on("click", function(){
+        chzeat = sandwichClick(chzeat, "Grilled Cheese")
+      })
+
+      //same as above but for tofu sandwich
+      $("#tofu").on("click", function(){
+        tofueat = sandwichClick(tofueat, "Tofu")
+      })
+
+    });
+
+</script>
+
+</body>
+
+</html>
