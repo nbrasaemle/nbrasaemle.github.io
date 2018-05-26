@@ -1,0 +1,35 @@
+/*background image*/
+body{
+    background-image: url("../images/Drogon.png");
+}
+
+/*fonts and margin left*/
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left:2em;
+    font-weight: bold;
+    color: #000442;
+}
+
+#small {
+    margin-left:3em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:1em;
+    color: #000442;
+}
+
+p {
+    margin-left:2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.4em;
+    color: #000442;
+}
+
+h3 {
+    margin-left:2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000442;
+    font-weight: bold;
+    background-color: rgba(241, 187, 37, 0.432);
+    width:9em;
+}
