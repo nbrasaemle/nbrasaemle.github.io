@@ -9,20 +9,24 @@ var losses =0;
 var maxGuesses=10;
 var guessedLetters=[];
 
-//Object of words to guess from
+//Object or array of words to guess from
 var lotrNames= ["aragorn", "legolas", "gandalf"]
 
-//function
+//function to get word to generate 
 
+//function to get generated word to show in blanks
 
-//for loop
+//for loop?
 
+//Print each letter as it if guessed correctly in the correct space
 
-//letters only
+//Print each incorrect letter
+//Print each incorrect guess once
+//do not allow non-letters to be used
 
-//blanks
+//print the wins and losses
 
-//1 letter at a time
+//print the number of guesses left
 
 
 
