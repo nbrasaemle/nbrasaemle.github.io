@@ -17,6 +17,11 @@ body {
     line-height: 1.5;
 }
 
+.scores {
+    font-size: 2em;
+    font-weight: bold;
+}
+
 /* To get text over the images */
 .numberImage {
     position: relative;
@@ -31,6 +36,8 @@ body {
     transform: translate(-50%, -50%);
 }
 
+
+
 /* To make the images responsive to screen width*/
 .img-fluid {
     max-width: 100%;
@@ -39,4 +46,8 @@ body {
 
 .btn {
     background-color: rgba(61, 255, 255, 0.288);
+}
+
+.btn:hover{
+    background-color: rgba(61, 255, 255, 0.671);
 }
