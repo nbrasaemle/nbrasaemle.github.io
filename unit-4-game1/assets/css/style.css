@@ -17,10 +17,17 @@ body {
     line-height: 1.5;
 }
 
-.scores {
+h2 {
     font-size: 2em;
     font-weight: bold;
 }
+
+h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
 
 /* To get text over the images */
 .numberImage {
