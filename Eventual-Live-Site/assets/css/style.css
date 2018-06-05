@@ -1,0 +1,26 @@
+body{
+    background-image: url("../images/knitting250px_@2X.png");
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+}
+
+.container {
+    background-color: #ffffff;
+}
+
+.logo {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+   
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+
+.row {
+    margin: 20px 0px;
+}
+

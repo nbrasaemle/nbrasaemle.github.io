@@ -46,16 +46,19 @@ $(document).ready(function(){
     function winLose() {
         if (totalScore == randomNumber) {
             wins++;
-            $("#win_lose").html("The Fellowship has been reunited!")
+            
             $("#wins").html("Wins: " + wins );
+            $("#win_lose").html("The Fellowship has been reunited!")
+            
     
             resetGame();
         }
     
         else if (totalScore > randomNumber) {
             losses++;
-            $("#win_lose").html("The Fellowship is lost!")
             $("#losses").html("Losses: " + losses);
+            $("#win_lose").html("The Fellowship is lost!")
+            
     
             resetGame();
         }
@@ -65,13 +68,23 @@ $(document).ready(function(){
         }
     }
 
-    $(".characters").on("click", function(){ //once a button is clicks the value does not change value if another button is clicked
-        
-        var value = $("button").attr("data-value");
+    $(".characters").on("click", function(event){ //once a button is clicks the value does not change value if another button is clicked
+        if (event.target.classList.contains("btn")){
+       var value = $(this).attr("data-value");
+       console.log(event)
         totalScore = totalScore + parseInt(value);
-        console.log("Score: " + totalScore)
+        console.log("Score: " + totalScore);
+        }
+
+        if (event.target.tagName=="IMG") {
+            var value = $(event.target).parent().attr("data-value");
+            console.log(event)
+             totalScore = totalScore + parseInt(value);
+             console.log("Score: " + totalScore);   
+        }
+        
         updateGame();
-        winLose();
+        winLose(); 
     });
 
 });
