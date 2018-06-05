@@ -67,17 +67,18 @@ $(document).ready(function(){
     $(".characters").on("click", function(event){ 
         if (event.target.classList.contains("btn")){
             var value = $(this).attr("data-value");
-            console.log(event);
-            totalScore = totalScore + parseInt(value);
+            console.log(event); 
+            totalScore = totalScore + parseInt(value); 
         } //getting the value and the button to match
 
         if (event.target.tagName=="IMG") {
             var value = $(event.target).parent().attr("data-value");
             console.log(event);
             totalScore = totalScore + parseInt(value);   
+             
         }// getting the image within the button to pair with the value of the button
 
-        console.log("Score: " + totalScore);   
+        console.log("Score: " + totalScore);  
         updateGame(); 
         winLose(); 
     });
