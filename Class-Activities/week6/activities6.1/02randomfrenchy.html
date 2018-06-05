@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Random French Bulldog</title>
+  <style>
+    .container{
+      text-align: center;
+      font-family: Verdana;
+    }
+    .dogimage{
+      max-width:400px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>It's a Random French Bulldog!</h1>
+    <section id="dogPhoto"></section>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    // API: https://dog.ceo/dog-api/
+    var queryURL = "https://dog.ceo/api/breed/bulldog/french/images/random";
+
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).then(function(response) {
+      $("#dogPhoto").html("<img class='dogimage' src='" + response.message + "'>")
+    });
+
+  </script>
+</body>
+
+</html>
