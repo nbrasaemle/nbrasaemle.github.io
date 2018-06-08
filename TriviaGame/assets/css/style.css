@@ -15,7 +15,10 @@ body{
     padding: .5em 1em;  
     font-size: 2em;
     font-weight: bold;
-
+    
+}
+.submitBtn{
+    align-items: center;
 }
 .actualQs {
     font-size:1.5em;

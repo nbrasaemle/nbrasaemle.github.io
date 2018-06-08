@@ -32,6 +32,8 @@ var instructions= "You will have 120 seconds to answer all of the questions. Cli
  $(".welcome").html("<h1> Welcome to The Lord of the Rings Trivia Game!</h1> ");
  $(".instructions").html("<h4> Press the Start button to start the game. " + instructions + " </h4><br>");
  $(".startBtn").html("<button type='button' class='btn btn-info startButton'>Start</button>");
+ $(".submitButton").hide();
+
 
  $(".startButton").on("click", function(){
     //console.log(this);
@@ -39,51 +41,75 @@ var instructions= "You will have 120 seconds to answer all of the questions. Cli
     $(".welcome").html("<h1>Lord of the Rings Trivia</h1> ");
     $(".instructions").html("<h4>Instructions: " + instructions + " </h4><br>");
     $(".startBtn").empty();
+    $(".submitButton").show();
 });
 
 function start(){
-var questionairre = {
-    "questions": [
-        {
-            "question": "Who was the composer of “The Lord of the Rings” Original Score?",
-            "answers": [" 9 hours 30 minutes  ", " 11 hours 22 minutes  ", " 10 hours 47 minutes  ", " 11 hours 40 minutes  "],
-            "answer": 3
-        },
-        {
-            "question": "Who was composer?",
-            "answers": [" Howard Shore  ", " John Williams  ", " Hans Zimmer  ", " Harry Gregson-WIlliams  "],
-            "answer": 0
-        },
-        {
-            // next question (questions, answers, answer)
-            "question": "How many members were in the original fellowship?",
-            "answers": [" 10  ", " 9  ", " 8  ", " 7  "],
-            "answer": 1
-        }
-    ],
-    "numGuessedRight": 0,
-    "numGuessedWrong": 0
+    var questionairre = {
+        "questions": [
+            {
+                "question": "How long is all three extended “The Lord of the Rings” movies combined including the credits?",
+                "answers": [" 9 hours 30 minutes  ", " 11 hours 22 minutes  ", " 10 hours 47 minutes  ", " 11 hours 40 minutes  "],
+                "answer": 3
+            },
+            {
+                "question": "Who was the composer of “The Lord of the Rings” Original Score?",
+                "answers": [" Howard Shore  ", " John Williams  ", " Hans Zimmer  ", " Harry Gregson-WIlliams  "],
+                "answer": 0
+            },
+            {
+                // next question (questions, answers, answer)
+                "question": "How many members were in the original fellowship?",
+                "answers": [" 10  ", " 9  ", " 8  ", " 7  "],
+                "answer": 1
+            }
+        ],
+        "numGuessedRight": 0,
+        "numGuessedWrong": 0
 
 
-}
-
-//console.log(instructions)
-
-for (var q=0; q < questionairre.questions.length; q++) {
-    var question = questionairre.questions[q];
-    console.log(q+1 + ": " + question.question + "<br>" + question.answers);
-    $(".questionDiv").append("<p class='actualQs'>"+ (q+1) + ": " + question.question + "</p>");
-    //var answers = question.answers;
-
-    for (var letter in question.answers) { 
-        console.log(question.answers)
-        $(".questionDiv").append("<input type='radio' name='" + q+ "' value='" + letter + "'/>" + question.answers[letter]);
-        console.log(letter);
-        console.log(question.answers[letter])
-        //$(".questionDiv").append("<input type='radio' name='answers' value='"+ )
     }
-}
 
+    //console.log(instructions)
+
+    for (var q=0; q < questionairre.questions.length; q++) {
+        var question = questionairre.questions[q];
+        console.log(q+1 + ": " + question.question + "<br>" + question.answers);
+        $(".questionDiv").append("<p class='actualQs'>"+ (q+1) + ": " + question.question + "</p>");
+        //var answers = question.answers;
+
+        for (var letter in question.answers) { 
+            //console.log(question.answers);
+            $(".questionDiv").append("<input type='radio' name='" + q+ "' value='" + letter + "'/>" + question.answers[letter]);
+            //console.log(letter);
+            //console.log(question.answers[letter]);
+            //$(".questionDiv").append("<input type='radio' name='answers' value='"+ )
+    
+            
+            
+        }
+
+        //var answer1=
+        
+    }
+    $(document).on("click", "input:radio", function(){
+        var selectVal = $(this).val();
+        console.log(this);
+        console.log(selectVal);
+        //answer1=$('input[type=radio]:checked').next();
+        //console.log(answer1)
+        //if (selectVal == questionairre.questions.answer){
+            
+        //}
+        console.log(question)
+        if (selectVal == question.answer ){
+        console.log("hi")
+
+        }
+        
+    }); 
+
+    
 
 }
 
