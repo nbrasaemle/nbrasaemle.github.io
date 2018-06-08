@@ -73,16 +73,16 @@ function start(){
     //console.log(instructions)
 
     for (var q=0; q < questionairre.questions.length; q++) {
-        var question = questionairre.questions[q];
-        console.log(q+1 + ": " + question.question + "<br>" + question.answers);
-        $(".questionDiv").append("<p class='actualQs'>"+ (q+1) + ": " + question.question + "</p>");
-        //var answers = question.answers;
+        var questionSelect = questionairre.questions[q];
+        console.log(q+1 + ": " + questionSelect.question + "<br>" + questionSelect.answers);
+        $(".questionDiv").append("<p class='actualQs'>"+ (q+1) + ": " + questionSelect.question + "</p>");
+        //var answers = questionSelect.answers;
 
-        for (var letter in question.answers) { 
-            //console.log(question.answers);
-            $(".questionDiv").append("<input type='radio' name='" + q+ "' value='" + letter + "'/>" + question.answers[letter]);
+        for (var letter in questionSelect.answers) { 
+            //console.log(questionSelect.answers);
+            $(".questionDiv").append("<input type='radio' name='" + q+ "' value='" + letter + "'/>" + questionSelect.answers[letter]);
             //console.log(letter);
-            //console.log(question.answers[letter]);
+            //console.log(questionSelect.answers[letter]);
             //$(".questionDiv").append("<input type='radio' name='answers' value='"+ )
     
             
@@ -92,6 +92,8 @@ function start(){
         //var answer1=
         
     }
+
+
     $(document).on("click", "input:radio", function(){
         var selectVal = $(this).val();
         console.log(this);
@@ -101,8 +103,9 @@ function start(){
         //if (selectVal == questionairre.questions.answer){
             
         //}
-        console.log(question)
-        if (selectVal == question.answer ){
+       
+        console.log(questionairre.questions.answer)
+        if (selectVal == questionairre.questions.answer ){
         console.log("hi")
 
         }
