@@ -42,6 +42,29 @@ var instructions= "You will have 120 seconds to answer all of the questions. Cli
     $(".instructions").html("<h4>Instructions: " + instructions + " </h4><br>");
     $(".startBtn").empty();
     $(".submitButton").show();
+    var time = 15;
+
+    //setTimeout($(".timer"), time*1000);
+    var interval;
+    
+    function startTimer(){
+        
+        interval= setInterval(decrement, 1000);
+        console.log("timing");
+
+    }
+
+    function decrement(){
+        time--;
+        $(".timer").html(time);
+        if (time==0){
+            alert("time up");
+        }
+        console.log("hello");
+    }
+
+   
+    startTimer();
 });
 
 function start(){
@@ -66,13 +89,34 @@ function start(){
         ],
         "numGuessedRight": 0,
         "numGuessedWrong": 0
+    }
 
+    var time = 15;
+
+    //setTimeout($(".timer"), time*1000);
+    var interval;
+    
+    function startTimer(){
+        clearInterval(interval);
+        interval= setInterval(decrement(), 1000*15);
+        
 
     }
 
-    //console.log(instructions)
+    function decrement(){
+        time--;
+        $(".timer").html(time);
+        if (time==0){
+            alert("time up");
+        }
+    }
 
-    for (var q=0; q < questionairre.questions.length; q++) {
+    clearInterval(interval);
+    startTimer();
+
+    var q;    //console.log(instructions)
+
+    for ( q=0; q < questionairre.questions.length; q++) {
         var questionSelect = questionairre.questions[q];
         console.log(q+1 + ": " + questionSelect.question + "<br>" + questionSelect.answers);
         $(".questionDiv").append("<p class='actualQs'>"+ (q+1) + ": " + questionSelect.question + "</p>");
@@ -80,21 +124,48 @@ function start(){
 
         for (var letter in questionSelect.answers) { 
             //console.log(questionSelect.answers);
-            $(".questionDiv").append("<input type='radio' name='" + q+ "' value='" + letter + "'/>" + questionSelect.answers[letter]);
+            $(".questionDiv").append("<input type='radio' name='" + q+ "' class='radioBtn' value='" + letter + "'/>" + questionSelect.answers[letter]);
             //console.log(letter);
             //console.log(questionSelect.answers[letter]);
             //$(".questionDiv").append("<input type='radio' name='answers' value='"+ )
     
-            
-            
+           
+           
         }
 
         //var answer1=
         
+        
     }
 
+    function checkAnswer(){
+        console.log("hi")
+        for ( q=0; q < questionairre.questions.length; q++) {
+        var selValue = $("input[name="+ q + "]:checked").val();
+        console.log(selValue)
+        if (selValue==questionairre.questions[q].answer){
+            numGuessedRight++;
+        }
+        else{
+            numGuessedWrong++;
+        }
+    }
+   // if ($(".radioBtn:checked").val() == questionSelect.answer) {
+       // console.log("Yes")
+    //}
+}
+$(".submitButton").on("click", function(){
+    checkAnswer();     
+    
+    
+    
+})  
 
-    $(document).on("click", "input:radio", function(){
+
+    
+    
+    //tried, realized needed to use the checked method
+    /*$(document).on("click", "input:radio", function(){
         var selectVal = $(this).val();
         console.log(this);
         console.log(selectVal);
@@ -104,13 +175,34 @@ function start(){
             
         //}
        
-        console.log(questionairre.questions.answer)
-        if (selectVal == questionairre.questions.answer ){
+        console.log(questionairre.questions[0].answer)
+        if (selectVal == questionairre.questions[0].answer ){
         console.log("hi")
 
         }
+        else {
+            console.log("no")
+        }
+
+        console.log(questionairre.questions[1].answer)
+        if (selectVal == questionairre.questions[1].answer ){
+        console.log("hi")
+            
+        }
+        else {
+            console.log("no")
+        }
+
+        console.log(questionairre.questions[2].answer)
+        if (selectVal == questionairre.questions[2].answer ){
+        console.log("hi")
+            
+        }
+        else {
+            console.log("no")
+        }
         
-    }); 
+    }); */
 
     
 
