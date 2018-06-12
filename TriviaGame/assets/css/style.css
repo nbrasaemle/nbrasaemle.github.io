@@ -1,13 +1,13 @@
 body{
-    background-image: url("../images/rivendell2.jpg");
-    
+    background-image: url("../images/rivendell.jpg");
+    background-position: center; 
 }
 
 .box{
     background-color: rgba(222, 184, 135, 0.432);
     padding: 2em;
     text-align: center;
-    color: whitesmoke;
+    color: #000080;
     margin:1em;
 
 }
@@ -15,7 +15,7 @@ body{
     padding: .5em 1em;  
     font-size: 2em;
     font-weight: bold;
-    
+    text-align: center;
 }
 
 .actualQs {
