@@ -107,7 +107,7 @@ $(document).ready(function() {
         var q;    
         for ( q=0; q < questionairre.questions.length; q++) {
             var questionSelect = questionairre.questions[q];
-            console.log(q+1 + ": " + questionSelect.question + "<br>" + questionSelect.answers);
+           // console.log(q+1 + ": " + questionSelect.question + "<br>" + questionSelect.answers);
             $(".questionDiv").append("<p class='actualQs'>"+ (q+1) + ": " + questionSelect.question + "</p>");
             //var answers = questionSelect.answers;
 
@@ -131,25 +131,25 @@ $(document).ready(function() {
 
         for ( q=0; q < questionairre.questions.length; q++) {
         var selValue = $("input[name="+ q + "]:checked").val();
-        console.log(selValue)
+       // console.log(selValue)
         if (selValue==questionairre.questions[q].answer){
             correct++;
-            console.log("Correct: " + correct);
+           // console.log("Correct: " + correct);
         }
         else if (selValue == undefined) {
             unchecked++;
-            console.log("Unanswered: " + unchecked)
+           // console.log("Unanswered: " + unchecked)
         }
         else {
             incorrect++;
-            console.log("Incorrect: " + incorrect);
+           // console.log("Incorrect: " + incorrect);
         }
        
         $("#correct").html("Correct Answers: " + correct);
         $("#incorrect").html("Incorrect Answers: " + incorrect);
         $("#unanswered").html("Unanswers: " + unchecked);
 
-        $(".questionDiv").hide();
+        $(".questiondiv").hide();
         $(".submitBtn").hide();
         $(".timer").hide();
         
@@ -170,7 +170,7 @@ $(document).ready(function() {
         $(".timer").html(time);
         
         if (time==0){
-            alert("time up");
+            //alert("time up");
             clearInterval(interval);
             submit();
         }    
