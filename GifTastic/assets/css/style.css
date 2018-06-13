@@ -1,0 +1,9 @@
+body {
+    background-image: url(../images/script2.jpg);
+   
+    color: rgb(106, 242, 252);
+}
+
+button {
+    margin:1em;
+}
