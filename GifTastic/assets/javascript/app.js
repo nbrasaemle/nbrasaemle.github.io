@@ -1,47 +1,79 @@
-var topic = "";
+$(document).ready(function () {
 
-var animals = ["LotR", "GoT", "Narnia", "StarWars", "StarTrek", "PiratesOfTheCaribbean", "Disney", "HarryPotter", "GreysAnatomy", "Hobbit"];
+    var topic = "";
+    var newShow= "";
+    var shows = ["Lord of the Rings", "Game of Thrones", "Narnia", "Star Wars", "Star Trek", "Pirates Of The Caribbean", "Disney", "Harry Potter", "Greys Anatomy", "King Arthur", "The Hobbit"];
 
-for (var i = 0; i < animals.length; i++) {
+    addBtns();
 
-    topic = animals[i];
+    function addBtns() { //make the butons appear in a function
 
-    $(".buttonDiv").append("<button data-name="+ topic+ ">" + topic + "</button>");
-    console.log(topic);
-}
-$("button").on("click", function () {
+        for (var i = 0; i < shows.length; i++) {
 
-    var btnVal= $(this).attr("data-name");
-    console.log("button work");
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + btnVal + "&api_key=oFpUhcOFQSCAb42LvCx2NxfC6IAcrk5o&limit=10";
-    console.log(btnVal);
+            topic = shows[i];
+            var topics = topic.replace(/\s+/g, '-'); //Gets rid of the spaces in the data-name value so that the link is complete and searches the right thing
+            var button = $("<button>");
+            button
+                .addClass("btn btn-success topicBtn")
+                .attr("data-name", topics)
+                .text(topic);
+            $(".buttonDiv").append(" ", button)
+          
+            // $(".buttonDiv").append("<button  data-name=" + topics + " type='button' class='btn btn-success topicBtn'>" + topic + "</button>");
+            console.log(topics);
+        }  
 
-    $.ajax({
-        url: queryURL,
-        method: "GET"
+    }
 
-    }).then(function (response) {
-        console.log("hi")
-        console.log(response);
-        var results = response.data;
+    $(".searchBtn").on("click", function(event) {
+        event.preventDefault(); // event.preventDefault() prevents the form from trying to submit itself.
+        $(".buttonDiv").empty();
+       
+        newShow = $("#search-input").val().trim();
+        shows.push(newShow);
+        addBtns();
+    });
+ 
+    function clearIt() {
+        $(".gifDiv").html("");
+    }
 
-        for (var a = 0; a < results.length; a++) {
-            var gifDiv = $("<div class='gif'>");
-            var rating = results[a].rating;
+//make this its own function
+    $(".topicBtn").on("click", function () { // make the new function work then put this below with new function in it
+        clearIt();
+        var btnVal = $(this).attr("data-name");
+        console.log("button work");
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + btnVal + "&api_key=oFpUhcOFQSCAb42LvCx2NxfC6IAcrk5o&limit=10";
+        console.log(btnVal);
 
-            var p = $("<p>").text("Rating: " + rating);
+        $.ajax({
+            url: queryURL,
+            method: "GET"
 
-            var topicImage = $("<img>");
-            topicImage.attr("src", results[a].images.fixed_height.url);
+        }).then(function (response) {
+            console.log("hi")
+            console.log(response);
+            var results = response.data;
+            
 
-            gifDiv.prepend(p);
-            gifDiv.prepend(topicImage);
+            for (var a = 0; a < results.length; a++) {
+                var gifDiv = $("<div class='gif'>");
+                var rating = results[a].rating;
 
-            $(".gifDiv").prepend(gifDiv);
+                var p = $("<p>").text("Rating: " + rating);
 
-        };
+                var topicImage = $("<img>");
+                topicImage.attr("src", results[a].images.fixed_height.url);
+
+                gifDiv.prepend(p);
+                gifDiv.prepend(topicImage);
+
+                $(".gifDiv").prepend(gifDiv);
+
+            };
+
+        });
 
     });
 
 });
-
