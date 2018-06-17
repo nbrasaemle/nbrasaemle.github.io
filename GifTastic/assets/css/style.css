@@ -1,9 +1,26 @@
 body {
     background-image: url(../images/script2.jpg);
-   
+   text-align: center;
     color: rgb(238, 206, 25);
 }
 
 button {
     margin:1em;
+}
+
+/* .buttonDiv {
+    text-align: center;
+} */
+
+.gifDiv {
+    display: inline-block;
+    margin:5px;
+    vertical-align: top;
+  
+
+}
+
+.jumbotron {
+  background-color: rgb(5, 5, 78);
+
 }
