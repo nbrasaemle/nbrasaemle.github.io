@@ -8,15 +8,10 @@ button {
     margin:1em;
 }
 
-/* .buttonDiv {
-    text-align: center;
-} */
-
 .gifDiv {
-    display: inline-block;
+    display: inline-block; /*for some reson inline block never actually works for me and I do not know why*/
     margin:5px;
     vertical-align: top;
-  
 
 }
 
