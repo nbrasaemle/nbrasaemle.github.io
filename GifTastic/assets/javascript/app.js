@@ -42,7 +42,7 @@ $(document).ready(function () {
     $(document).on("click", ".topicBtn", function () { // make the new function work then put this below with new function in it
         clearIt();
         var btnVal = $(this).attr("data-name");
-        console.log(this)
+        //console.log(this)
         console.log("button work");
 
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + btnVal + "&api_key=oFpUhcOFQSCAb42LvCx2NxfC6IAcrk5o&limit=10";
@@ -67,12 +67,12 @@ $(document).ready(function () {
                 var p = $("<p>").text("Rating: " + rating);
 
                 var topicImage = $("<img>");
-                topicImage.attr("src", results[a].images.fixed_height.url);
+                topicImage.attr("src", results[a].images.fixed_height_still.url);
                 topicImage.attr("data-still", results[a].images.fixed_height_still.url);
-                topicImage.attr("data-animate", reults[a].images.fixed_height.url);
+                topicImage.attr("data-animate", results[a].images.fixed_height.url); 
                 topicImage.attr("data-state", "still");
-                topicImage.attr("class", "gif");
-                
+                topicImage.attr("class", "gif img-fluid");
+                console.log(topicImage)
                 gifDiv.append(p);
                 gifDiv.prepend(topicImage);
 
@@ -88,7 +88,7 @@ $(document).ready(function () {
 
     function animateGif() {
        var state = $(this).attr("data-state");
-
+        console.log(this)
        if (state =="still") {
         $(this).attr("src", $(this).attr("data-animate"));
         $(this).attr("data-state", "animate");
