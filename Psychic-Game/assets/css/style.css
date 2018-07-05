@@ -5,7 +5,7 @@ body{
 
 /*fonts and margin left*/
 h1 {
-    font-size: 28px;
+    font-size: 2em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-left:2em;
     font-weight: bold;
@@ -28,6 +28,7 @@ p {
 
 h3 {
     margin-left:2em;
+    font-size: 1.5em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #000442;
     font-weight: bold;
