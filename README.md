@@ -1,2 +1,2 @@
 # nbrasaemle.github.io
-Nicole's world
+This is my personal website for my portfolio

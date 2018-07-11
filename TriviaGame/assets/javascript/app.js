@@ -147,7 +147,7 @@ $(document).ready(function() {
        
         $("#correct").html("Correct Answers: " + correct);
         $("#incorrect").html("Incorrect Answers: " + incorrect);
-        $("#unanswered").html("Unanswers: " + unchecked);
+        $("#unanswered").html("Unanswered: " + unchecked);
 
         $(".questiondiv").hide();
         $(".submitBtn").hide();
