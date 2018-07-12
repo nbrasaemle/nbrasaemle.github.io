@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Nicole</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
+
 <body>
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-info">
         <a class="navbar-brand logo" href="index.html">Nicole Brasaemle</a>
-        <button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav ml-auto">
-            
+
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">About </a>
                 </li>
@@ -44,48 +50,62 @@
         </div>
         <div class="row">
             <div class="col-md-3">
-                    <img id="img1" src="assets/images/400nicole.jpg" alt="Picture of Nicole" width="100%">
+                <img id="profile-pic" src="assets/images/400nicole.jpg" alt="Picture of Nicole" width="100%">
             </div>
-            <div class="col-md-5">
-                        <p>
-                            My name is Nicole Brasaemle. I was born in Mounds View, MN, and I have lived there all my life except for when I was in college.
-                            I went to the local public schools, and in high school, I was a member of the Irondale Marching Knights. 
-                            After high school I went to the University of Wisconsin-River Falls. I declared a major my sophmore year in Geology and a minor in Mathematics. 
-                            I graduated with a Bachelor of Science in Geology in May of 2017.
-                        </p>
-                        <br>
-                        <p>
-                            I am currently enrolled in the University of Minnesota's Full-Stack Web Development Coding Boot Camp.
-                            In this boot camp I am learning to become a Full-Stack Web Developer. 
-                            I have experience in sales and managing. I currently work in retail.
-                            I have had some programming experience in Java, prior to this boot camp, and I have enjoyed the boot camp so far.
-                            I hope to work with computers, programming, or web development when finished with this boot camp.
-                        </p>
-                        <br>
-                        <p>
-                            When I am not coding, I like to spend time with my family and our dogs, go hiking at local and state parks, and read.
-                            I also enjoy watching movies, tv, and playing video games for the PC, Wii, Xbox 360, and Nintendo DS. 
-                            My absolute favorite game is "The Elder Scrolls V: Skyrim" made by Bethsaida; my favorite movie series is "The Lord of the Rings", specifically "The Lord of the Rings: The Two Towers".
-                            I  also have a passion for ceramics and pottery, painting, knitting, and crocheting.
-                        </p>
-                        <br>
+            <div class="col-md-6">
+                <p>
+                    My name is Nicole Brasaemle. I live in Mounds View, MN. I went to the University of Wisconsin-River Falls. I declared a major
+                    my sophmore year in Geology and a minor in Mathematics. I graduated with a Bachelor of Science in Geology
+                    in May of 2017.
+                </p>
+                <br>
+                <p>
+                    I am currently enrolled in the University of Minnesota's Full-Stack Web Development Coding Boot Camp. In this boot camp I
+                    am learning to become a Full-Stack Web Developer. I have experience in sales and managing. I currently
+                    work in retail. I have had some programming experience in Java, R, and Mathimatica, prior to this boot
+                    camp, and I have enjoyed the boot camp so far. I hope to work with web development, programming, or computers
+                    when finished with this boot camp.
+                </p>
+                <br>
+                <p id="icon3">
+                    <i class="fab fa-html5 icon2"></i>
+                    <i class="fab fa-css3 icon2"></i>
+                    <i class="fab fa-js icon2"></i>
+                    <i class="fab fa-node-js icon2"></i>
+                </p>
             </div>
-            <div class="col-md-4">
-                <!--Side Bar-->
+            <div class="col-md-3">
+                <div class="icons">
+                    <a href="https://github.com/nbrasaemle" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/nicole-brasaemle/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
             </div>
         </div>
-    
-    <!--End of Content-->
+
+        <!--End of Content-->
 
     </div>
-
-    <nav class="navbar sticky-bottom navbar-dark bg-secondary">
-            <a class="navbar-brand mx-auto" href="#">Copyright ©</a>
+    <nav class="navbar sticky-bottom justify-content-center navbar-dark bg-dark footer">
+        <p class="navbar-brand" id="copyright">
+            <p>Built by:</p>
+            <p>
+                <a class="author" href="https://github.com/nbrasaemle" target="_blank">Nicole Brasaemle,</a>&nbsp;|&nbsp; Copyright &copy;</p>
+        </p>
     </nav>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>   
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>

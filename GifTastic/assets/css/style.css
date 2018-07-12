@@ -1,6 +1,8 @@
 body {
     background-image: url(../images/script2.jpg);
-   text-align: center;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
     color: rgb(238, 206, 25);
 }
 
