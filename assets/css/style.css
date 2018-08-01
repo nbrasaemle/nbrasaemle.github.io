@@ -20,6 +20,7 @@ body{
     font-family: 'Georgia', 'Times New Roman', Times, serif;
     font-size: 28px;
 }
+
 h2, h4 {
     font-weight:bolder;
     font-family: 'Georgia', 'Times New Roman', Times, serif;
@@ -46,6 +47,7 @@ h5 {
 .row {
     margin: 20px 0px;
 }
+
 .contact {
     text-align: center;
 }
@@ -55,18 +57,22 @@ h5 {
     font-size:90px;
     color: #000080;
 }
+
 .icon2 {
     font-size:60px;
     margin-right:5px;
     margin-left:5px;
 }
+
 #icon3{
     text-align: center;
     color:#000080;
 }
+
 #profile-pic {
     border-radius: 50%;
 }
+
 .btn {
     background-color: #000080!important;
     color:white;
@@ -84,14 +90,16 @@ h5 {
     color:rgb(179, 224, 241);
     margin-top: 20px;
 }
+
 .author {
     margin: 0px 5px 0px 5px;
     color:rgb(179, 224, 241);
 }
-
+/* hovers */
 .icons:hover{
     color:#0000e6;
 }
+
 .btn:hover{
     background-color: #0000e6!important;
 }
