@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Nicole</title>
-    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/images/Letter-N-PNG-Image.png" type="image/x-icon"/>
+    <link rel="icon" href="assets/images/Letter-N-PNG-Image.png" type="image/x-icon" />
 </head>
 
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-        <a class="navbar-brand logo" href="index.html">Nicole Brasaemle</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info sticky-top">
+        <a class="navbar-brand logo" href="#parallaxOne">Nicole Brasaemle</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,29 +26,43 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav ml-auto">
 
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">About </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#parallaxOne">About </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-link" href="#parallaxTwo">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="resume.html">Resume</a>
+                    <a class="nav-link" href="#parallaxThree">Resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="#parallaxFour">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://github.com/nbrasaemle" target="_blank"><i class="nav-link fab fa-github navIcons"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.linkedin.com/in/nicole-brasaemle/" target="_blank"><i class="nav-link fab fa-linkedin navIcons"></i></a>
                 </li>
             </ul>
         </div>
     </nav>
     <!--End Navbar-->
 
-    <!--Content-->
-    <div class="container">
+    <!--About me content-->
+    <section class="parallax" id="parallaxOne">
+        <div class="text-parallax">
+            <div class="display-4" id="title">
+                <br><br><br> Nicole Brasaemle
+            </div>
+
+        </div>
+    </section>
+    <section class="container" id="about">
         <div class="row">
             <div class="col-md-12">
                 <br>
-                <h2>About me</h2>
+                <h1>About me</h1>
                 <hr>
             </div>
         </div>
@@ -64,13 +78,12 @@
                 </p>
                 <br>
                 <p>
-                        Web Developer with a Bachelor of Science in Geology, a Minor in Mathematics, a certificate
-                        in Full Stack Web Development, and a passion for computer programming. Ability to
-                        think logically, use creativity in problem solving, learn quickly, prioritize tasks
-                        by staying organized and use time management. Experienced with HTML, CSS, Bootstrap,
-                        JavaScript, jQuery, Java, R, Mathematica, and managing tasks through schooling and
-                        work. Devoted to approaching programming challenges from different angles, and collaborating
-                        with others on web applications.
+                    Web Developer with a Bachelor of Science in Geology, a Minor in Mathematics, a certificate in Full Stack Web Development,
+                    and a passion for computer programming. Ability to think logically, use creativity in problem solving,
+                    learn quickly, prioritize tasks by staying organized and use time management. Experienced with HTML,
+                    CSS, Bootstrap, JavaScript, jQuery, Java, R, Mathematica, and managing tasks through schooling and work.
+                    Devoted to approaching programming challenges from different angles, and collaborating with others on
+                    web applications.
                 </p>
                 <br>
                 <p id="icon3">
@@ -80,26 +93,262 @@
                     <i class="fab fa-node-js icon2"></i>
                 </p>
             </div>
-            <div class="col-md-3">
+            <!-- <div class="col-md-3">
                 <div class="icons">
                     <a href="https://github.com/nbrasaemle" target="_blank"><i class="fab fa-github icons"></i></a>
+                </div> -->
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/nicole-brasaemle/" target="_blank">
+                    <i class="fab fa-linkedin icons"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--End of About me-->
+
+    </div>
+    <!-- Portfolio -->
+    <section class="parallax" id="parallaxTwo">
+
+    </section>
+    <section class="container" margin="auto" id="portfolio">
+        <div class="row">
+            <div class="col-md-12">
+                <br>
+                <h1>Portfolio</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 project">
+                <div class="card">
+                    <img class="card-img-top" src="assets/images/underonewoof.PNG" alt="Under One Woof Logo">
+                    <div class="card-body">
+                        <h4 class="card-title">Under One Woof</h4>
+                        <a href="https://nbrasaemle.github.io/Under-One-Woof/" target="_blank" class="btn btn-info">Have
+                            a Look</a>
+                        <a href="https://github.com/nbrasaemle/Under-One-Woof" target="_blank" class="btn btn-info">See the Code</a>
+                    </div>
                 </div>
-                <div class="icons">
-                    <a href="https://www.linkedin.com/in/nicole-brasaemle/" target="_blank">
-                        <i class="fab fa-linkedin icons"></i>
+                <div class="card project">
+                    <img class="card-img-top" src="assets/images/trivia.PNG" alt="trivia screenshot">
+                    <div class="card-body">
+                        <h4 class="card-title">Lord of the Rings Trivia</h4>
+                        <a href="https://nbrasaemle.github.io/Trivia/" target="_blank" class="btn btn-info">Have a Look</a>
+                        <a href="https://github.com/nbrasaemle/Trivia" target="_blank" class="btn btn-info">See the Code</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 project">
+                <div class="card">
+                    <img class="card-img-top" src="assets/images/partyup.PNG" alt="Party Up partial screenshot">
+                    <div class="card-body">
+                        <h4 class="card-title">Party Up with Games</h4>
+                        <a href="https://party-up-with-games.herokuapp.com/" target="_blank" class="btn btn-info">Have a
+                            Look
+                        </a>
+                        <a href="https://github.com/nbrasaemle/Party-Up" target="_blank" class="btn btn-info">See the Code</a>
+                    </div>
+                </div>
+                <div class="card project">
+                    <img class="card-img-top" src="assets/images/movie-this.PNG" alt="screenshot of liri">
+                    <div class="card-body">
+                        <h4 class="card-title">Liri Node App</h4>
+                        <!-- <a href="#" target="_blank" class="btn btn-info">Have a look</a> -->
+                        <a href="https://github.com/nbrasaemle/Liri-Node-App" target="_blank" class="btn btn-info">Have a
+                            look
+                        </a>
+                    </div>
+                </div>
+                <div class="card project">
+                    <img class="card-img-top" src="assets/images/devour.PNG" alt="burger">
+                    <div class="card-body">
+                        <h4 class="card-title"></h4>
+                        <!-- <a href="" target="_blank" class="btn btn-info">Have a Look</a> -->
+                        <a href="https://github.com/nbrasaemle/burger" target="_blank" class="btn btn-info">See the Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--End of Content-->
+
+
+    </section>
+
+    <!-- Resume -->
+    <section class="parallax" id="parallaxThree">
+
+    </section>
+    <section class="container" id="resumePage">
+        <div class="row">
+            <div class="col-md-12">
+                <br>
+                <h1>Resume</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="resume">
+                    <a href="https://drive.google.com/file/d/183vfJXetuPnd81LuxWAkDa05qrmV-0RM/view?usp=sharing" target="_blank" alt="Resume Link">
+                        <i class="far fa-file-pdf icons"></i>
                     </a>
                 </div>
             </div>
         </div>
 
-        <!--End of Content-->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="card resume">
+                    <h4 class="card-header">Education</h4>
+                    <div class="card-body resume">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <h5 class="card-title">Coding Boot Camp, Full Stack Flex Program</h5>
+                                <p class="card-text">University of Minnesota-Twin Cities, Oct. 2018</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h5 class="card-title">Bachelor of Science in Geology, Mathematics Minor</h5>
+                                <p class="card-text">University of Wisconsin-River Falls (UWRF), GPA: 3.26, May 2017</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="card resume">
+                    <h4 class="card-header">Technical Skills</h4>
+                    <div class="card-body resume">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <h5 class="card-title">Web Development:</h5>
+                                <p class="card-text">
+                                    <i class="fab fa-html5 icon2"></i>
+                                    <i class="fab fa-css3 icon2"></i>
+                                    <i class="fab fa-js icon2"></i>
+                                    <i class="fab fa-node-js icon2"></i>
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <h5 class="card-title">Other Coding Languages</h5>
+                                <p class="card-text">Java, R, Mathematica</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h5 class="card-title">Office Software</h5>
+                                <p class="card-text">Microsoft Word, Microsoft Excel, Microsoft PowerPoint</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="card resume">
+                    <h4 class="card-header">Experience</h4>
+                    <div class="card-body resume">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <h5 class="card-title">Cashier</h5>
+                                <h6 class="card-text">Target, Fridley, MN, May 2018 to Present</h6>
+                                <p class="card-text">• Assisted guests by using problem solving and being friendly</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h5 class="card-title">Supervisor, Host, Cashier, Jump Referee</h5>
+                                <h6 class="card-text">Zero Gravity Trampoline Park, Mounds View, MN, Jun. 2014 to May 2018</h6>
+                                <p class="card-text">• Supervised jumpers and jump referees to ensure safety and communicated
+                                    logistics with customers
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <h5 class="card-title">Desk Assistant</h5>
+                                <h6 class="card-text">Residence Life, UWRF, Aug. 2015 to May 2016, Aug. 2016 to May 2017</h6>
+                                <p class="card-text"> • Maintained the security of the Residence Hall by staying alert to
+                                    surroundings • Answered the residents’ questions by staying up-to-date with policies
+                                    and procedures • Managed desk equipment and documented inventory with great attention
+                                    to detail
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section class="parallax" id="parallaxFour">
 
-    </div>
+    </section>
+    <section class="container contact" id="contact">
+        <div class="row">
+            <div class="col-sm-12">
+                <br>
+                <h1>Contact Nicole Brasaemle</h1>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card contactBox">
+                    <div class="card-body">
+                        <h5 class="card-title">Phone:</h5>
+                        <h5>612-708-6006</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card contactBox">
+                    <div class="card-body">
+                        <h5 class="card-title">Email:</h5>
+                        <a href="mailto:nicole.brasaemle@gmail.com" class="card-link">
+                            nicole.brasaemle@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card ">
+                    <div class="card-body">
+                        <h5 class="card-title">GitHub:</h5>
+                        <a href="https://github.com/nbrasaemle" class="card-link" target="_blank"><i class="fab fa-github icons"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">LinkedIn:</h5>
+                        <a href="https://www.linkedin.com/in/nicole-brasaemle/" class="card-link" target="_blank">
+                            <i class="fab fa-linkedin icons"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="parallax" id="parallaxFive">
+
+    </section>
+
+
     <nav class="navbar sticky-bottom justify-content-center navbar-dark bg-dark footer">
         <p class="navbar-brand" id="copyright">
-            <p>Built by:</p>
+            <!-- <p>Built by:</p> -->
+
+            <a href="https://github.com/nbrasaemle" target="_blank"><i class="nav-link fab fa-github footIcon"></i></a>
+
+            <a href="https://www.linkedin.com/in/nicole-brasaemle/" target="_blank"><i class="nav-link fab fa-linkedin footIcon"></i></a>
+
             <p>
-                <a class="author" href="https://github.com/nbrasaemle" target="_blank">Nicole Brasaemle</a>&nbsp;|&nbsp; Copyright &copy;</p>
+                <a class="author" href="https://github.com/nbrasaemle" target="_blank">Nicole Brasaemle</a>&nbsp;|&nbsp;
+                Copyright &copy; 2018</p>
         </p>
     </nav>
 
